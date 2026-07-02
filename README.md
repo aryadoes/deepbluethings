@@ -1,140 +1,141 @@
-# 🌊 DeepBlue OS - Web-Based Operating System
+# 🌊 Deep Blue OS & FadedEcho OS
 
-A beautiful, modern web-based operating system with glassmorphism UI design. Built with vanilla HTML, CSS, and JavaScript.
+A revolutionary web-based operating system with boot authentication, account setup, real-time display, and fully functional applications.
 
-## ✨ Features
+## 🚀 Features
 
-### 🎨 **Design**
-- **Glassmorphism UI** - Clean, modern glass effect with blur and transparency
-- **Dark Theme** - Easy on the eyes with cyan accent colors
-- **Responsive Layout** - Works on various screen sizes
-- **Smooth Animations** - Elegant transitions and effects
+### Boot & Authentication
+- **OS Code Entry** - Enter `HW12` for Deep Blue OS
+- **Installation Process** - 5-second installation animation
+- **Account Setup** - Create username and password
+- **Login System** - Secure login on restart
+- **Session Persistence** - Save user data locally
 
-### 🖥️ **Desktop**
-- Draggable desktop items
-- Desktop icons for quick access
-- Right-click context menu
-- Clean, organized layout
+### Main Interface
+- **Real-Time Display** - Current time and date in taskbar
+- **Clean UI** - Glassmorphism design with cyan accents
+- **Taskbar** - Quick access to open applications
+- **Desktop Icons** - Easy app launcher
 
-### 📁 **File System**
-- **Documents Folder** - Sample documents
-- **Downloads Folder** - Downloaded files
-- **Pictures Folder** - Image files
-- Folder view with file listing
-
-### 🚀 **Applications**
+### 📁 Applications
 
 #### Calculator
-- Full-featured calculator
-- Basic arithmetic operations (+, -, *, /)
-- Clean, intuitive interface
+- Full arithmetic operations (+, -, *, /)
 - Real-time display
+- Functional decimal support
 
-#### Notes
+#### Notes App
 - Create and save notes
 - Local storage persistence
-- Delete notes
-- Quick note management
+- Delete individual notes
+- Quick access notes list
+
+#### 📂 Folder Manager
+- View folders (Documents, Downloads, Pictures)
+- Browse recent files
+- File explorer interface
+- **Cannot be force quit** - Closing triggers system error
+- **Force Quit Button** - Intentional shutdown feature
 
 #### Text Editor
-- Write and edit text
-- Full-screen editing area
-- Syntax-ready interface
+- Full-screen text editing
+- Write and edit documents
 
-#### Browser
-- URL bar interface
-- Demo browser functionality
-- Ready for expansion
+#### ⚙️ Settings
+- Display settings
+- Sound control
+- Account information
+- Uninstall OS option
 
-#### Settings
-- Display preferences
-- System settings
-- Toggle options (Dark Mode, Animations, Sound, Notifications)
+### System Features
+- **Auto-open Folder** - Folder app opens on startup
+- **Taskbar Management** - Minimize/maximize windows
+- **Window Dragging** - Move windows around
+- **Real-Time Clock** - Date and time display
+- **Logout Function** - Return to login screen
+- **Error Handling** - System error screen for folder closure
 
-### 🎮 **System Features**
-- **Start Menu** - Access all applications
-- **Taskbar** - Quick access to running apps
-- **System Tray** - Clock, Volume, WiFi, Battery indicators
-- **Window Management**
-  - Minimize, Maximize, Close windows
-  - Draggable windows
-  - Z-index management
-  - Window focus
+## 🔑 OS Codes
 
-## 🎯 How to Use
+| Code | Operating System |
+|------|------------------|
+| HW12 | Deep Blue OS |
+| BUBU8102BAUNI9810ECHO | FadedEcho OS |
 
-### Opening Applications
-1. **Double-click** desktop items to open
-2. Use **Start Menu** (Windows icon in taskbar)
-3. Click **Taskbar** items to toggle windows
+## 🎮 How to Use
 
-### Window Controls
-- **Drag** the title bar to move windows
-- **Minimize** button to hide window
-- **Maximize** button to fullscreen
-- **Close** button to quit application
+1. **Open index.html** in your web browser
+2. **Enter OS Code**: `HW12`
+3. **Click Continue** → Installation begins
+4. **Wait 5 seconds** for installation to complete
+5. **Create Account** - Enter name and password
+6. **Start Using** - Explore the OS!
 
-### Desktop Management
-- **Right-click** for context menu
-- **Drag** items around the desktop
-- **Organize** your workspace
+### Default Test User (After Setup)
+- Create any username and password
+- System will remember on browser reload
 
-## 🛠️ Technical Stack
+## 🎨 Design Features
 
-- **HTML5** - Semantic markup
-- **CSS3** - Glassmorphism effects, animations, gradients
-- **Vanilla JavaScript** - No dependencies, pure JS
-- **Font Awesome 6** - Icons and symbols
-- **Local Storage** - Data persistence for notes
+- **Glassmorphism UI** - Modern blur effects
+- **Dark Theme** - Cyan accent colors (#06b6d4)
+- **Smooth Animations** - Window transitions
+- **Responsive Layout** - Works on different screens
 
-## 📦 Files
+## 📁 File Structure
 
 ```
 deepbluethings/
-├── index.html      # Main HTML structure
-├── styles.css      # All CSS styling (glassmorphism)
-├── script.js       # JavaScript functionality
-└── README.md       # Documentation
+├── index.html      # Main OS interface
+├── os.js           # All OS functionality
+├── README.md       # Documentation
+└── (old files: script.js, styles.css - no longer used)
 ```
 
-## 🎨 Color Scheme
+## ⚡ Quick Features
 
-- **Primary Background**: `#0f172a` - Deep navy
-- **Secondary**: `#1e293b` - Slate gray
-- **Accent**: `#06b6d4` - Cyan blue
-- **Glass Effect**: RGBA with 0.7 opacity + 20px blur
+✅ Real-time date and time display  
+✅ Saved notes with persistence  
+✅ Functional calculator  
+✅ Folder explorer  
+✅ Account management  
+✅ Settings panel  
+✅ Window management (minimize, maximize, drag)  
+✅ Logout and restart  
+✅ Error handling system  
+✅ Clean, modern UI  
 
-## 🚀 Getting Started
+## 🔒 Security
 
-1. Clone the repository
-2. Open `index.html` in your web browser
-3. Start exploring DeepBlue OS!
+- Passwords stored in browser localStorage
+- Session-based login system
+- Account creation on first boot
+- Login verification on restart
 
-## 💡 Features to Explore
+## 💾 Local Storage
 
-- Double-click desktop items to open applications
-- Click the Start menu (Windows icon) for app launcher
-- Use the calculator for quick math
-- Save notes that persist in your browser
-- Drag windows around the screen
-- Minimize/maximize windows
-- Check the system tray for time and status
+- User credentials saved locally
+- Notes saved between sessions
+- Account data persists on browser refresh
 
-## 🔮 Future Enhancements
+## 🎯 Special Features
 
-- More applications
-- File management system
-- Custom themes
-- Notifications system
-- Multi-user support
-- Cloud sync
+- **Folder App** - Always open on startup
+- **Force Quit** - Triggers system error state
+- **Uninstall** - 5-second uninstall animation
+- **Auto-Login** - If user exists, shows login screen
 
-## 📝 License
+## 🚦 System States
 
-Open source and free to use!
+1. **Boot Screen** - Enter OS code
+2. **Installation** - 5-second progress
+3. **Setup** - Create account
+4. **Login** - Enter password (if returning user)
+5. **Main OS** - Desktop with applications
+6. **Error** - System error after folder force quit
 
 ---
 
-**Built with ❤️ using glassmorphism design principles**
+**Ready to use! Open index.html in your browser now!** 🌊✨
 
-Enjoy your DeepBlue OS experience! 🌊✨
+Visit: https://github.com/aryadoes/deepbluethings
