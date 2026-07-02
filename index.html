@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepBlue OS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Desktop -->
+    <div class="desktop" id="desktop">
+        <!-- Desktop Icons -->
+        <div class="desktop-icons" id="desktopIcons">
+            <div class="desktop-item" draggable="true" data-type="folder" data-name="Documents">
+                <div class="desktop-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <div class="desktop-label">Documents</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="folder" data-name="Downloads">
+                <div class="desktop-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="desktop-label">Downloads</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="folder" data-name="Pictures">
+                <div class="desktop-icon">
+                    <i class="fas fa-images"></i>
+                </div>
+                <div class="desktop-label">Pictures</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="app" data-name="Calculator">
+                <div class="desktop-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="desktop-label">Calculator</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="app" data-name="Notes">
+                <div class="desktop-icon">
+                    <i class="fas fa-sticky-note"></i>
+                </div>
+                <div class="desktop-label">Notes</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="app" data-name="Browser">
+                <div class="desktop-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="desktop-label">Browser</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="app" data-name="Text Editor">
+                <div class="desktop-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="desktop-label">Text Editor</div>
+            </div>
+            <div class="desktop-item" draggable="true" data-type="app" data-name="Settings">
+                <div class="desktop-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="desktop-label">Settings</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <button class="start-button" id="startButton">
+                <i class="fas fa-windows"></i>
+            </button>
+            <div class="taskbar-apps" id="taskbarApps"></div>
+        </div>
+        <div class="taskbar-right">
+            <div class="system-tray">
+                <div class="tray-item" id="volumeControl">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="tray-item" id="wifiControl">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="tray-item" id="batteryControl">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                <div class="tray-item" id="clockDisplay">
+                    <span id="time">00:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+        <div class="start-menu-header">
+            <h2>DeepBlue OS</h2>
+            <span class="close-menu" id="closeMenu">&times;</span>
+        </div>
+        <div class="start-menu-content">
+            <div class="menu-section">
+                <h3>Applications</h3>
+                <div class="menu-apps">
+                    <div class="menu-item" data-app="Calculator">
+                        <i class="fas fa-calculator"></i>
+                        <span>Calculator</span>
+                    </div>
+                    <div class="menu-item" data-app="Notes">
+                        <i class="fas fa-sticky-note"></i>
+                        <span>Notes</span>
+                    </div>
+                    <div class="menu-item" data-app="Browser">
+                        <i class="fas fa-globe"></i>
+                        <span>Browser</span>
+                    </div>
+                    <div class="menu-item" data-app="Text Editor">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Text Editor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-section">
+                <h3>System</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-app="Settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Windows Container -->
+    <div class="windows-container" id="windowsContainer"></div>
+
+    <!-- Right-click Context Menu -->
+    <div class="context-menu" id="contextMenu">
+        <div class="context-item" id="contextNew">
+            <i class="fas fa-file-circle-plus"></i> New Folder
+        </div>
+        <div class="context-item" id="contextRefresh">
+            <i class="fas fa-sync"></i> Refresh
+        </div>
+        <div class="context-item" id="contextSettings">
+            <i class="fas fa-cog"></i> Settings
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
